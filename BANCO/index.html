@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGARIA BANKING</title>
+</head>
+<body>
+    <h1>BANCO</h1>
+    Conta: <input id="input_accout" name="input_accout" type="text" value="" ></div> 
+    Senha: <input id="input_password" name="input_password" type="text" value=""></div>          
+    <button onclick="acessar_conta()">Confirmar</button>
+</body>
+    <script type="text/javascript">
+        const naccout = 123456
+        const npassword = 1234
+        
+        function acessar_conta(){
+            var input_accout = document.getElementById("input_accout").value
+            var input_password = document.getElementById("input_password").value
+            //alert("Você digitou: " + input_accout + " " + input_password)
+          
+                if (input_accout == naccout && input_password == npassword) {
+                   alert("OK!! ACESSANDO...")
+                } else alert("Conta ou Senha invalida !!")
+           
+        }
+    </script>
+
+</html>
