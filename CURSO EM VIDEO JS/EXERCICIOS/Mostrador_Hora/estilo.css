@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    
+}
+
+header {
+    color: white;
+    text-align: center;
+    }
+
+section {
+    /*Centralizando caixa section*/
+    margin: auto;
+    padding: 15px;
+    /*Estilizando a section*/
+    background-color: white;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.237);
+    /*Texto*/
+    text-align: center;
+    
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}

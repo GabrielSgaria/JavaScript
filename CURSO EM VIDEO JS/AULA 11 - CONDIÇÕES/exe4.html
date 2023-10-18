@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de extrangeiro</title>
+</head>
+<body>
+    <h1>Sistema de extrangeiros</h1>
+
+    Qual seu pais de origem ? <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    
+    <div id="texto">
+
+    </div>
+    <script>
+    
+        function verificar() {
+            var ps = document.querySelector('input#pais')
+            var texto = document.querySelector('div#texto')
+            var pais = (ps.value)
+            texto.innerHTML = `Se você é do(a) <strong>${pais}</strong>, `
+
+            if (pais == "brasil") {
+                texto.innerHTML += `Você é Brasileiro !!`
+            } else {
+                texto.innerHTML += `Você é Estrangeiro !!`
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
